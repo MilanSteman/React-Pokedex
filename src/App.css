@@ -1,38 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,500&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
 .App {
-  text-align: center;
+  margin: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loader {
+  height: 288px;
+  background-color: #CCCCCC;
+  border: none !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #F3F3F3;
+  color: #1C1D20;
+  font-family: 'Work Sans', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+}
+
+.pokedex>li {
+  border: 1px solid #1C1D20;
+}
+
+.pokedex>li a {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #1C1D20;
 }
 
-.App-link {
-  color: #61dafb;
+.pokedex>li div {
+  width: 100%;
+  padding: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pokedex>li div p.id {
+  color: #1C1D2075;
+  margin-bottom: .25rem;
+}
+
+.pokedex>li div p.type {
+  margin-top: .25rem;
+}
+
+.pokedex>li div ul {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.pokedex>li div ul li {
+  list-style: disc;
+}
+
+.pokedex img {
+  max-width: 7.5rem;
+  max-height: 7.5rem;
+  height: 100%;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem 1rem;
+  color: #1C1D2075;
+  transition: .5s;
+  background-color: #cccccc;
+  border-radius: 4rem;
+  font-family: 'Work Sans', sans-serif;
+  width: 100%;
+  height: 2.5rem;
+  position: absolute;
+  right: 0;
+  border: none;
+  outline: none;
+}
+
+label[for="search"] {
+  z-index: 10000;
+  border-radius: 4rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #1C1D2075;
+}
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.typeList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 2rem;
+}
+
+.typeList li {
+  width: 100%;
+}
+
+.typeList button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .5rem;
+  cursor: pointer;
+  border: 1px solid #1C1D2075;
+  color: #1C1D2075;
+  transition: .5s;
+  width: 100%;
+}
+
+.typeList button.active {
+  border: 1px solid #1C1D20;
+  color: #1C1D20;
 }
