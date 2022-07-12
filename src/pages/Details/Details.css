@@ -1,0 +1,156 @@
+.detail-page {
+    max-width: 37.5rem;
+    margin: auto;
+}
+
+.detail-page header figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-page header figure img {
+    width: 10rem;
+    aspect-ratio: 1/1;
+}
+
+.detail-page header h1 {
+    font-size: 2rem;
+}
+
+.detail-page header h1 span {
+    font-weight: 400;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.detail-page header ul {
+    width: 100%;
+    max-width: 20rem;
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.detail-page header ul li {
+    padding: 0.5rem 2rem;
+    color: white;
+    border-radius: 2rem;
+}
+
+.detail-page .stats {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 2rem 0;
+}
+
+.detail-page .stats li {
+    display: flex;
+    align-items: center;
+}
+
+.detail-page .stats li label {
+    display: block;
+    width: 5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.detail-page .stats li progress {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+.detail-page .stats li progress::-webkit-progress-bar {
+    background-color: #d6d6d6;
+    border-radius: 5rem;
+}
+
+.detail-page .stats li progress::-webkit-progress-value {
+    background-color: #d33a49;
+    border-radius: 5rem;
+}
+
+.detail-page .stats li:nth-of-type(2) progress::-webkit-progress-value {
+    background-color: #fea725;
+    border-radius: 5rem;
+}
+
+.detail-page .stats li:nth-of-type(3) progress::-webkit-progress-value {
+    background-color: #0288e6;
+    border-radius: 5rem;
+}
+
+.detail-page .stats li:nth-of-type(4) progress::-webkit-progress-value {
+    background-color: #02e6ad;
+    border-radius: 5rem;
+}
+
+.detail-page .stats li:nth-of-type(5) progress::-webkit-progress-value {
+    background-color: rgb(254, 37, 243);
+    border-radius: 5rem;
+}
+
+.detail-page .stats li:nth-of-type(6) progress::-webkit-progress-value {
+    background-color: #90afc5;
+    border-radius: 5rem;
+}
+
+.detail-page .abilities {
+    width: 100%;
+    max-width: 20rem;
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.detail-page .abilities li {
+    font-weight: 700;
+}
+
+.detail-page h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #727272;
+    margin-top: 2rem;
+}
+
+.bottom-button {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    padding: 1.25rem;
+    background-color: #d6d6d6;
+    text-align: center;
+    color: #1c1d20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.detail-page a span {
+    font-size: 1rem;
+}
+
+.detail-page .back-button {
+    display: flex;
+    gap: 0.5rem;
+    color: #1c1d20;
+}
+
+.detail-page a.previous {
+    left: 0;
+}
+
+.detail-page {
+    margin-bottom: 6rem;
+}
+
+.detail-page a.next {
+    right: 0;
+}
