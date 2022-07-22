@@ -75,7 +75,7 @@ export default function Card({ filter, ...individualPokemon }) {
     id: addZero(data.id),
     name: capitalize(data.name),
     types: data.types[1] ? [data.types[0].type.name, data.types[1].type.name] : [data.types[0].type.name],
-    image: data.sprites.front_default,
+    image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`,
   };
 
   if (filter.length > 0 && match === false) {

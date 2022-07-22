@@ -66,7 +66,7 @@ export default function Details() {
     id: addZero(data.id),
     name: capitalize(data.name),
     types: data.types[1] ? [data.types[0].type.name, data.types[1].type.name] : [data.types[0].type.name],
-    image: data.sprites.front_default,
+    image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`,
     height: data.height,
     weight: data.weight,
     stats,
@@ -89,7 +89,7 @@ export default function Details() {
     nextId = Number(pokeId) + 1;
   }
 
-  console.log(data);
+  console.log(data.sprites.front_default);
 
   return (
     <main className="detail-page">
